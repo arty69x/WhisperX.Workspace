@@ -1,9 +1,21 @@
 import type { Express } from "express";
 import { ENV } from "./env";
 
+function getStorageKey(params: unknown) {
+  if (Array.isArray(params)) {
+    return params[0];
+  }
+
+  if (params && typeof params === "object") {
+    return (params as Record<string, string | undefined>)["0"];
+  }
+
+  return undefined;
+}
+
 export function registerStorageProxy(app: Express) {
   app.get("/manus-storage/*", async (req, res) => {
-    const key = req.params[0];
+    const key = getStorageKey(req.params);
     if (!key) {
       res.status(400).send("Missing storage key");
       return;

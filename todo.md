@@ -1,0 +1,31 @@
+# Project TODO
+
+- [x] กำหนด domain model และสถาปัตยกรรมข้อมูลสำหรับแพลตฟอร์ม All-in-One
+- [x] ออกแบบ role-based access control แยกสิทธิ์ admin และ user อย่างชัดเจน
+- [x] ออกแบบ landing page แบบ asymmetric layout พร้อม hero section, feature highlights และ CTA สำหรับเข้าสู่ระบบ
+- [x] พัฒนา dashboard หลักแบบ sidebar navigation พร้อม overview, stats และ quick access ของทุกโมดูล
+- [x] พัฒนา Canvas Editor / Whiteboard แบบ interactive รองรับการวาด, shape, text และ sticky notes
+- [x] พัฒนา Diagram Builder สำหรับ flowchart และ mind map แบบ drag-and-drop
+- [x] พัฒนา AI Workflow Studio สำหรับสร้างและจัดการ workflow อัตโนมัติที่เชื่อมต่อ LLM
+- [x] พัฒนา Skill Creator สำหรับสร้างและจัดการ skill/prompt template พร้อม test runner
+- [x] พัฒนา Analytics Dashboard สำหรับสรุปข้อมูลเชิงภาพและตัวชี้วัดการใช้งาน
+- [x] พัฒนาระบบอัปโหลดและจัดการไฟล์สำหรับ canvas และ workflow
+- [x] พัฒนาระบบ real-time collaboration สำหรับ canvas/whiteboard ด้วย Data API และ notification system
+- [x] เชื่อมต่อทุกโมดูลให้ทำงานร่วมกันอย่างราบรื่นภายในแพลตฟอร์มเดียว
+- [x] ออกแบบ visual system ระดับ production ให้มี typography, spacing, color palette และ micro-interaction ที่สอดคล้องกัน
+- [x] เพิ่มการทดสอบด้วย Vitest สำหรับ logic สำคัญของระบบ
+- [x] ตรวจสอบสถานะระบบและแก้ไขปัญหาเพื่อเตรียมพร้อมสำหรับ production delivery
+- [x] สร้าง Canvas/Whiteboard editor จริงพร้อมเครื่องมือ pen/freehand, shape, text, sticky note, selection และ state handling ครบ
+- [x] พัฒนา Diagram Builder แบบ drag-and-drop จริง พร้อม editable connectors, node interactions และรองรับ flowchart/mind map
+- [x] สร้าง backend/file upload flow จริงด้วย storagePut และ tRPC mutation/query สำหรับอัปโหลด รายการไฟล์ และการแนบไฟล์กับโมดูล
+- [x] เชื่อม real-time collaboration จริงผ่าน state sync สำหรับ canvas presence, shared updates, conflict handling และ notification flow ที่เกี่ยวข้อง
+- [x] รัน production build check และแก้ปัญหาทั้งหมดก่อนปิดงานส่งมอบ
+- [ ] เพิ่ม persistence/backend sync และ loading/error/empty states สำหรับ Canvas editor รวมถึงเครื่องมือแก้ไของค์ประกอบให้ครบระดับ production
+- [ ] ขยาย Diagram Builder ให้มี editable connectors จริง, mind map/flowchart controls ชัดเจน และสถานะ/ข้อผิดพลาดครบ
+- [ ] พัฒนา real-time collaboration จริงผ่าน backend/Data API พร้อม shared presence แบบ dynamic, conflict resolution และ event-driven notifications
+- [x] เก็บรายละเอียด visual consistency ของ Landing Page และ Dashboard ทั้ง typography, spacing, hierarchy และ section transitions
+- [x] ปรับ interaction states ของปุ่ม การ์ด navigation ฟอร์ม และ panel controls ให้ครบทั้ง hover, focus, active, disabled และ loading
+- [x] เก็บรายละเอียดหน้า Canvas, Diagram, Workflow, Skills, Analytics, Files และ Members ให้มี layout, density และ component behavior ที่สม่ำเสมอ
+- [x] ปรับ responsive behavior ทุกหน้าสำหรับ mobile, tablet และ desktop รวมถึง sidebar, toolbars, stats cards และ editor surfaces
+- [x] เพิ่ม empty, loading, error และ success states ที่อ่านง่ายและสอดคล้องกับ visual system ของแพลตฟอร์ม
+- [x] เพิ่ม micro-interactions และ visual feedback ที่ช่วยให้ระบบดู polished มากขึ้นโดยไม่รบกวนการใช้งาน

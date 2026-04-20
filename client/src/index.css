@@ -175,3 +175,58 @@
     }
   }
 }
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background-image:
+      radial-gradient(circle at top left, rgba(111, 92, 255, 0.14), transparent 28%),
+      radial-gradient(circle at 78% 8%, rgba(20, 184, 166, 0.1), transparent 22%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 22%);
+    background-attachment: fixed;
+    font-feature-settings: "liga" 1, "calt" 1, "ss01" 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgba(117, 99, 255, 0.35);
+    color: white;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04)),
+      rgba(12, 18, 33, 0.48);
+    box-shadow: 0 28px 90px rgba(2, 6, 23, 0.3);
+    backdrop-filter: blur(22px);
+  }
+
+  .glass-panel::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 36%, transparent 64%, rgba(255, 255, 255, 0.05));
+    opacity: 0.7;
+  }
+
+  .surface-outline {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background:
+      radial-gradient(circle at top right, rgba(110, 101, 255, 0.14), transparent 28%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+      rgba(10, 14, 28, 0.56);
+    box-shadow: 0 26px 70px rgba(2, 6, 23, 0.26);
+    backdrop-filter: blur(22px);
+  }
+}

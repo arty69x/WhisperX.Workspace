@@ -20,9 +20,9 @@
 - [x] สร้าง backend/file upload flow จริงด้วย storagePut และ tRPC mutation/query สำหรับอัปโหลด รายการไฟล์ และการแนบไฟล์กับโมดูล
 - [x] เชื่อม real-time collaboration จริงผ่าน state sync สำหรับ canvas presence, shared updates, conflict handling และ notification flow ที่เกี่ยวข้อง
 - [x] รัน production build check และแก้ปัญหาทั้งหมดก่อนปิดงานส่งมอบ
-- [ ] เพิ่ม persistence/backend sync และ loading/error/empty states สำหรับ Canvas editor รวมถึงเครื่องมือแก้ไของค์ประกอบให้ครบระดับ production
-- [ ] ขยาย Diagram Builder ให้มี editable connectors จริง, mind map/flowchart controls ชัดเจน และสถานะ/ข้อผิดพลาดครบ
-- [ ] พัฒนา real-time collaboration จริงผ่าน backend/Data API พร้อม shared presence แบบ dynamic, conflict resolution และ event-driven notifications
+- [x] เพิ่ม persistence/backend sync และ loading/error/empty states สำหรับ Canvas editor รวมถึงเครื่องมือแก้ไของค์ประกอบให้ครบระดับ production
+- [x] ขยาย Diagram Builder ให้มี editable connectors จริง, mind map/flowchart controls ชัดเจน และสถานะ/ข้อผิดพลาดครบ
+- [x] พัฒนา real-time collaboration จริงผ่าน backend/Data API พร้อม shared presence แบบ dynamic, conflict resolution และ event-driven notifications
 - [x] เก็บรายละเอียด visual consistency ของ Landing Page และ Dashboard ทั้ง typography, spacing, hierarchy และ section transitions
 - [x] ปรับ interaction states ของปุ่ม การ์ด navigation ฟอร์ม และ panel controls ให้ครบทั้ง hover, focus, active, disabled และ loading
 - [x] เก็บรายละเอียดหน้า Canvas, Diagram, Workflow, Skills, Analytics, Files และ Members ให้มี layout, density และ component behavior ที่สม่ำเสมอ
